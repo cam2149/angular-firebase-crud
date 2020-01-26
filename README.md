@@ -1,15 +1,6 @@
 # angular-firebase-crud
 Aplicación de Angular 8 y la base de datos en tiempo Real, Firebase. crearemos un CRUD en el que podamos probar las operaciones básicas de toda aplicación web y base de datos.
 
-      _                      _                 ____ _     ___
-     / \   _ __   __ _ _   _| | __ _ _ __     / ___| |   |_ _|
-    / △ \ | '_ \ / _` | | | | |/ _` | '__|   | |   | |    | |
-   / ___ \| | | | (_| | |_| | | (_| | |      | |___| |___ | |
-   /_/   \_\_| |_|\__, |\__,_|_|\__,_|_|       \____|_____|___|
-   
-                 |___/
-    
-
 Angular CLI: 8.3.23
 Node: 12.14.1
 OS: win32 x64
