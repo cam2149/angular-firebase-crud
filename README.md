@@ -1,6 +1,29 @@
-# angular-mysql-crud
-Una aplicación web usando Angular 7, Nodejs y la base de datos MySQL. En esta aplicación crearemos nuestra REST API, utilizando Nodejs junto con Typescript y luego la utilizaremos junto a nuestra aplicación frontend usando angular y otros modulos de Javascript.
+# angular-firebase-crud
+Aplicación de Angular 8 y la base de datos en tiempo Real, Firebase. crearemos un CRUD en el que podamos probar las operaciones básicas de toda aplicación web y base de datos.
 
-Fuente: https://www.faztweb.com/curso/angular-mysql-crud-typescript
+    _                      _                 ____ _     ___
+    / \   _ __   __ _ _   _| | __ _ _ __     / ___| |   |_ _|
+   / △ \ | '_ \ / _` | | | | |/ _` | '__|   | |   | |    | |
+  / ___ \| | | | (_| | |_| | | (_| | |      | |___| |___ | |
+ /_/   \_\_| |_|\__, |\__,_|_|\__,_|_|       \____|_____|___|
+                |___/
+    
 
-Video YouTube: https://www.youtube.com/watch?v=lxYB79ANJM8
+Angular CLI: 8.3.23
+Node: 12.14.1
+OS: win32 x64
+Angular:
+...
+
+Package                      Version
+------------------------------------------------------
+@angular-devkit/architect    0.803.23
+@angular-devkit/core         8.3.23
+@angular-devkit/schematics   8.3.23
+@schematics/angular          8.3.23
+@schematics/update           0.803.23
+rxjs                         6.4.0
+
+Fuente: https://www.faztweb.com/curso/angular-firebase-crud
+
+Video YouTube: https://www.youtube.com/watch?time_continue=102&v=WND9mw3HiBM&feature=emb_title
