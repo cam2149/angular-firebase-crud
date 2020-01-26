@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'angular-crud-firebase'`, () => {
+  it(`should have as title 'angular-firebase-crud'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('angular-crud-firebase');
+    expect(app.title).toEqual('angular-firebase-crud');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('angular-crud-firebase app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('angular-firebase-crud app is running!');
   });
 });
