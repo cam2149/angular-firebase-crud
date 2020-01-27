@@ -26,7 +26,7 @@ export class ProductService {
         category: product.category,
         location: product.location,
         price: product.price,
-        imgae: product.image
+        image: product.image
       });
   }
 
@@ -36,7 +36,7 @@ export class ProductService {
       category: product.category,
       location: product.location,
       price: product.price,
-      imgae: product.image
+      image: product.image
     });
   }
 

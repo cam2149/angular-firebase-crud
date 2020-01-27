@@ -1,13 +1,9 @@
-import { Component, OnInit, HostBinding } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
-import { Product } from '../../../models/product';
-import { ProductService } from '../../../services/product.service';
-import { ActivatedRoute, Router } from '@angular/router';
-
-import { NgForm } from '@angular/forms';
-
-// toastr
 import { ToastrService } from 'ngx-toastr';
+import { ProductService } from '../../../services/product.service';
+import { NgForm } from '@angular/forms';
+import { Product } from 'src/app/models/product';
 
 @Component({
   selector: 'app-product',
@@ -16,19 +12,13 @@ import { ToastrService } from 'ngx-toastr';
 })
 export class ProductComponent implements OnInit {
 
-  @HostBinding('class')  classes = 'row';
-
-  
-  constructor(
-    private productService: ProductService,  
-    private toastr: ToastrService
-    ) { }
+  constructor(private productService: ProductService, private toastrService: ToastrService) { }
 
   ngOnInit() {
     this.productService.getProducts();
     this.resetForm();
-    
   }
+
   onSubmit(productForm: NgForm)
   {
     if(productForm.value.$key == null)
@@ -37,9 +27,8 @@ export class ProductComponent implements OnInit {
     this.productService.updateProduct(productForm.value);
     
     this.resetForm(productForm);
-    this.toastr.success('Sucessful Operation', 'Product Registered');
+    this.toastrService.success('Sucessful Operation', 'Sucessful Operation');
   }
-
   resetForm(productForm?: NgForm)
   {
     if(productForm != null)

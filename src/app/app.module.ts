@@ -1,5 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,12 +15,13 @@ import { environment } from '../environments/environment';
 
 //components
 import { ProductsComponent } from './components/products/products.component';
-import { ProductComponent } from './components/products/product/product.component';
-import { ProductsListComponent } from './components/products/products-list/products-list.component';
+
 
 //service
 import { ProductService } from './services/product.service';
-import { NavigationComponent } from './components/navigation/navigation.component';
+import { ProductComponent } from './components/products/product/product.component';
+import { ProductsListComponent } from './components/products/products-list/products-list.component';
+
 
 
 @NgModule({
@@ -24,14 +29,16 @@ import { NavigationComponent } from './components/navigation/navigation.componen
     AppComponent,
     ProductsComponent,
     ProductComponent,
-    ProductsListComponent,
-    NavigationComponent
+    ProductsListComponent
   ],
   imports: [
+    FormsModule,
+    ToastrModule.forRoot(),
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    BrowserAnimationsModule
   ],
   providers: [
     ProductService
